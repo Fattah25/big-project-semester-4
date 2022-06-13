@@ -25,7 +25,7 @@
 ## PROYEK APLIKASI
 
 1. Aplikasi Penghitung Wajah / orang
-   - [Aplikasi](./dist/)
+   - [Aplikasi](projekbesar/dist/)
    - [Source Code](#)
 
 
