@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package deteksiwajah;
 
 import java.io.File;
@@ -12,20 +9,13 @@ import org.opencv.core.MatOfRect;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.objdetect.CascadeClassifier;
 
-/**
- *
- * @author TRI IKHSAN FATTAH
- */
+
 class FaceDetection {
 
      FaceDetection(String pathImageTerpilih) {
     File configFile = new File("C:\\openCVfile\\opencv\\sources\\data\\haarcascades\\haarcascade_frontalface_alt.xml");
-    String getPathku = configFile.getAbsolutePath();
-      
-      Mat src = Imgcodecs.imread(pathImageTerpilih);
-      
-
-      // Instantiating the CascadeClassifier
+    String getPathku = configFile.getAbsolutePath(); // Instantiating the CascadeClassifier
+    Mat src = Imgcodecs.imread(pathImageTerpilih);
       
       CascadeClassifier klasifikasi = new CascadeClassifier(getPathku);
 

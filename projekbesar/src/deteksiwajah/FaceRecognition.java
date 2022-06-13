@@ -265,6 +265,7 @@ public class FaceRecognition extends javax.swing.JFrame {
             coutFaceButton.setText("Count Face");
             coutFaceButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(255, 255, 255), null, java.awt.Color.lightGray));
             coutFaceButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+            coutFaceButton.setEnabled(false);
             coutFaceButton.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     coutFaceButtonActionPerformed(evt);
@@ -307,6 +308,7 @@ public class FaceRecognition extends javax.swing.JFrame {
             faceCount2Button.setText("Face Count");
             faceCount2Button.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.white, null, java.awt.Color.lightGray));
             faceCount2Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+            faceCount2Button.setEnabled(false);
             faceCount2Button.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     faceCount2ButtonActionPerformed(evt);
@@ -528,6 +530,10 @@ public class FaceRecognition extends javax.swing.JFrame {
             Image newing = img.getScaledInstance(imageJLabel.getWidth(), imageJLabel.getHeight(),  Image.SCALE_SMOOTH);
             IIcon = new ImageIcon(newing);
             imageJLabel.setIcon(IIcon);
+            
+            coutFaceButton.setEnabled(true);
+        }else{
+            System.out.println("file tidak tersedia.");
         }
         
     }//GEN-LAST:event_browseButtonActionPerformed
@@ -546,6 +552,8 @@ public class FaceRecognition extends javax.swing.JFrame {
             Image newing = img.getScaledInstance(displayFoto.getWidth(), 480,  Image.SCALE_SMOOTH);
             Icam = new ImageIcon(newing);
             displayFoto.setIcon(Icam);
+            
+            faceCount2Button.setEnabled(true);
         } else {
             System.out.println("");
         }
@@ -554,15 +562,16 @@ public class FaceRecognition extends javax.swing.JFrame {
     private void coutFaceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coutFaceButtonActionPerformed
         // TODO add your handling code here:
         String detect = imagePath.getText();
-        FaceDetection fc = new FaceDetection(detect);
-        System.out.println(fc);
+        FaceDetection faceDetection = new FaceDetection(detect);
+        
+        
     }//GEN-LAST:event_coutFaceButtonActionPerformed
 
     private void faceCount2ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_faceCount2ButtonActionPerformed
         // TODO add your handling code here:
         String detect = imagePath.getText();
-        FaceDetection fc = new FaceDetection(detect);
-        System.out.println(fc);
+        FaceDetection faceDetection = new FaceDetection(detect);
+        
     }//GEN-LAST:event_faceCount2ButtonActionPerformed
 
     private void myGithubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myGithubActionPerformed
@@ -574,11 +583,6 @@ public class FaceRecognition extends javax.swing.JFrame {
             Logger.getLogger(FaceRecognition.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_myGithubActionPerformed
-
-    
-     
-    
-    
   
     public static void main(String args[]) {
         
