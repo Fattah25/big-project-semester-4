@@ -11,7 +11,7 @@
 
 ## PROFIL
 
-<img src="Images/fotoku.jpg" align="left" width=120px height=160px margin=0px>
+<img src="https://raw.githubusercontent.com/Fattah25/Tugas-Besar-PBO-Tri-Ilman/main/Images/fotoku.jpg" align="left" width=120px height=160px margin=0px>
 
 **Nama :** Tri Ilman Almunawarah Fattah<br>
 **NIM :** 32602000101<br>
