@@ -1,6 +1,6 @@
  <img src="https://raw.githubusercontent.com/Fattah25/Tugas-Besar-PBO-Tri-Ilman/main/Images/Unissula_logo.png" align="right" width=110px margin=0px><img src="https://raw.githubusercontent.com/Fattah25/Tugas-Besar-PBO-Tri-Ilman/main/Images/logo_fti.jpg" align="left" width=100px margin=0px>
 
-<h1 align="center">TUGAS PEMBUATAN APLIKASI DENGAN PENERAPAN <i>OBJECT ORIENTED PROGRAMMING</i></h1>
+<h1 align="center">TUGAS PEMBUATAN APLIKASI DESKTOP DENGAN MENERAPKAN <i>FACE DETECTION</i></h1>
 <br>
 
 **Daftar Isi:**
