@@ -1,4 +1,4 @@
- <img src="Images/logo_fti.jpg" align="right" width=110px margin=0px><img src="Images/Unissula_logo.png" align="left" width=100px margin=0px>
+ <img src="Images/logo_fti.jpg" align="right" width=110px margin=0px><img src="https://github.com/Fattah25/Tugas-Besar-PBO-Tri-Ilman/tree/main/Images/Unissula_logo.png" align="left" width=100px margin=0px>
 
 <h1 align="center">TUGAS PEMBUATAN APLIKASI DENGAN PENERAPAN <i>OBJECT ORIENTED PROGRAMMING</i></h1>
 <br>
