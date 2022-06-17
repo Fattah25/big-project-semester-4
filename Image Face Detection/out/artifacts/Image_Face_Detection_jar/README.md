@@ -10,6 +10,5 @@ java -jar "Image Face Detection.jar"
 ```
 <br>
 
-[Source Code >>>](.../src/CountFace.java)
-[Source Code >>>](..../src/CountFace.java)
-[Source Code >>>](src/CountFace.java)
+[Source Code >>>](/src/CountFace.java)
+
