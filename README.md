@@ -25,8 +25,8 @@
 ## PROYEK APLIKASI
 
 1. Aplikasi Penghitung Wajah / orang
-   - [Aplikasi](projekbesar/dist/)
-   - [Source Code](projekbesar/src/deteksiwajah)
+   - [Aplikasi](/Image-Face-Detection/out/artifacts/Image_Face_Detection_jar)
+   - [Source Code](/Image-Face-Detection/src)
 
 
 <br>
