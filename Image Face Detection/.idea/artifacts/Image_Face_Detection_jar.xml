@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Image Face Detection:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Image_Face_Detection_jar</output-path>
+    <root id="archive" name="Image Face Detection.jar">
+      <element id="module-output" name="Image Face Detection" />
+      <element id="extracted-dir" path="C:/openCVfile/opencv/build/java/opencv-455.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

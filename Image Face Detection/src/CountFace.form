@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="CountFace">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1080" height="720"/>
+    </constraints>
+    <properties>
+      <focusTraversalPolicyProvider value="true"/>
+      <minimumSize width="320" height="200"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="1e492" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties>
+          <alignmentX value="1.0"/>
+          <alignmentY value="1.0"/>
+          <background color="-11514033"/>
+          <doubleBuffered value="true"/>
+        </properties>
+        <border type="empty" title-justification="2"/>
+        <children>
+          <component id="348c3" class="javax.swing.JButton" binding="pilihFileButton">
+            <constraints/>
+            <properties>
+              <background color="-2039071"/>
+              <borderPainted value="false"/>
+              <enabled value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <text value="Pilih File"/>
+              <toolTipText value="pilih dari direktory"/>
+            </properties>
+          </component>
+          <component id="3bc4e" class="javax.swing.JButton" binding="realTimeButton">
+            <constraints/>
+            <properties>
+              <background color="-2039071"/>
+              <borderPainted value="false"/>
+              <text value="From Webcam"/>
+            </properties>
+          </component>
+          <component id="bde56" class="javax.swing.JButton" binding="aboutButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-2039071"/>
+              <borderPainted value="false"/>
+              <text value="About"/>
+              <toolTipText value="Tentang CountFace Application"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="96b11" binding="displayPanel" layout-manager="CardLayout" hgap="5" vgap="5">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="952d0" binding="pilihFilePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <card name="Card1"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="b4e7f" binding="subMenuPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="20" left="10" bottom="0" right="10"/>
+                <constraints border-constraint="South"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="9427d" class="javax.swing.JButton" binding="countButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-11381159"/>
+                      <borderPainted value="false"/>
+                      <enabled value="false"/>
+                      <foreground color="-328966"/>
+                      <text value="Count"/>
+                      <toolTipText value="hitung "/>
+                    </properties>
+                  </component>
+                  <component id="ab582" class="javax.swing.JTextField" binding="pathTextField">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="dc0e3" class="javax.swing.JButton" binding="browseButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-11381159"/>
+                      <borderPainted value="false"/>
+                      <foreground color="-328966"/>
+                      <text value="Browse"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="c2cea" class="javax.swing.JLabel" binding="imageDisplayJLabel">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <background color="-8552061"/>
+                  <focusTraversalPolicyProvider value="true"/>
+                  <focusable value="true"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <icon value="facedetecticon.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="2f7e3" binding="webCamPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <card name="Card3"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="99626" binding="subWebCamPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="0" bottom="0" right="0"/>
+                <constraints border-constraint="South"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="5879f" class="javax.swing.JLabel" binding="numberOfFace">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.5"/>
+                      <font name="Courier New" size="20" style="1"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="d620" class="javax.swing.JCheckBox" binding="pauseCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-13815758"/>
+                      <font name="Monospaced" style="0"/>
+                      <foreground color="-1"/>
+                      <hideActionText value="false"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="Pause"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="1328d" class="javax.swing.JLabel" binding="displayWebCam">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="d5225" binding="aboutPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <card name="Card2"/>
+            </constraints>
+            <properties/>
+            <border type="none" title=""/>
+            <children>
+              <scrollpane id="9d8fb" binding="scrollAboutPane">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <background color="-15256023"/>
+                  <horizontalScrollBarPolicy value="30"/>
+                  <opaque value="false"/>
+                  <verticalScrollBarPolicy value="20"/>
+                  <visible value="true"/>
+                  <wheelScrollingEnabled value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="c61de" class="javax.swing.JEditorPane" binding="aboutEditorPane">
+                    <constraints/>
+                    <properties>
+                      <autoscrolls value="true"/>
+                      <background color="-986896"/>
+                      <caretColor color="-1"/>
+                      <contentType value="text/html"/>
+                      <doubleBuffered value="true"/>
+                      <editable value="false"/>
+                      <opaque value="true"/>
+                      <text value="&lt;html&gt;&#10;  &lt;head&gt;&#10;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;    &#10;  &lt;/body&gt;&#10;&lt;/html&gt;&#10;"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
